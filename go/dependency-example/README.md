@@ -21,6 +21,12 @@ $ tree -L 1.
 $ zip -r example.zip ./*
 ```
 
+## Create env with builder image
+
+```bash
+$ fission env create --name go --image fission/go-env:0.12.0 --builder fission/go-builder:0.12.0
+```
+
 ## Create package
 ```bash
 $ fission pkg create --src example.zip --env go
